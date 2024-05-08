@@ -1,4 +1,3 @@
-```markdown
 ## FileIdentify - File Analysis Tool
 
 **FileIdentify** is a Java application designed to perform various file analysis operations. It can check file signatures, upload files to VirusTotal for security analysis, and extract text and metadata using Apache Tika. The application also supports generating detailed reports for each processed file.
@@ -10,16 +9,22 @@
 - **Report Generation**: Optionally generate detailed reports and save them to a specified directory.
 
 ### Building the Project
-To build the project, simply run the `build.sh` script from the project root directory:
+To build the project, execute the following script in your terminal:
 ```bash
 ./build.sh
 ```
-This script handles the compilation and packaging of the project using Maven and will place the built JAR file on your Desktop or a specified directory.
+This script will compile the Java files and package them into a runnable JAR file.
 
 ### Usage
 Run the application with the file path and desired operations:
 ```bash
 java -jar FileIdentify-0.0.1-SNAPSHOT.jar <file_path> <operation> [--report] [<operation>...]
+```
+
+### Example Command
+To analyze a directory of files, generate reports, and extract metadata, you would run:
+```bash
+java -jar FileIdentify-0.0.1-SNAPSHOT.jar Files_to_Analyze -r -a
 ```
 
 ### Available Operations
@@ -30,10 +35,3 @@ java -jar FileIdentify-0.0.1-SNAPSHOT.jar <file_path> <operation> [--report] [<o
 
 ### Flags
 - `--report, -r`: Write output to a report file named based on the input file.
-
-### Example Command
-To analyze a directory of files and generate a report for each file using Apache Tika:
-```bash
-java -jar FileIdentify-0.0.1-SNAPSHOT.jar Files_to_Analyze -r -a
-```
-```
