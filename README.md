@@ -18,7 +18,7 @@ This script will compile the Java files and package them into a runnable JAR fil
 ### Usage
 Run the application with the file path and desired operations:
 ```bash
-java -jar FileIdentify-0.0.1-SNAPSHOT.jar <file_path> <operation> [--report] [<operation>...]
+java -jar FileIdentify-0.0.1-SNAPSHOT.jar <file_path> [--report] [<operation>...]
 ```
 
 ### Available Operations
