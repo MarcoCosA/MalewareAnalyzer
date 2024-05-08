@@ -33,7 +33,7 @@ java -jar FileIdentify-0.0.1-SNAPSHOT.jar <file_path> <operation> [--report] [<o
 ### Example Usage
 To analyze a directory of files, generate reports, and extract metadata, you would run:
 ```bash
-java -jar FileIdentify-0.0.1-SNAPSHOT.jar ./LOVE-LETTER-FOR-YOU.TXT.vbs -r -u -a
+java -jar FileIdentify-0.0.1-SNAPSHOT.jar .examplemalware/LOVE-LETTER-FOR-YOU.TXT.vbs -r -u -a
 ```
 ### Example Report Output
 ```text
