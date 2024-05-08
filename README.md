@@ -35,7 +35,7 @@ To analyze a directory of files, generate reports, and extract metadata, you wou
 ```bash
 java -jar FileIdentify-0.0.1-SNAPSHOT.jar ./LOVE-LETTER-FOR-YOU.TXT.vbs -r -c -u -a
 ```
-### Report Output
+### Example Report Output
 ```text
 Extracted Text Content:
 rem  barok -loveletter(vbe) <i hate go to school>
