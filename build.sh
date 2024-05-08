@@ -2,7 +2,7 @@
 
 # Variables
 jarfile="FileIdentify-0.0.1-SNAPSHOT.jar"  # Based on your Maven artifactId and version
-destination="$HOME/Desktop/"  # Copying the jar to the user's Desktop
+destination="."  # Copying the jar to the user's Desktop
 
 # Navigate to the directory of the script
 cd "$(dirname "$0")"

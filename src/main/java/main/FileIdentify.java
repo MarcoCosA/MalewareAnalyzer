@@ -112,7 +112,9 @@ public class FileIdentify {
 			System.out.println("Failed to upload file to VirusTotal.");
 			return null;
 		}
-		VirusTotalUploader.getReportFromVirusTotal(fileId);
+
+		VirusTotalReportAnalyzer a = new VirusTotalReportAnalyzer(VirusTotalUploader.getReportFromVirusTotal(fileId));
+		a.printAnalysis();
 		return fileId;
 	}
 
